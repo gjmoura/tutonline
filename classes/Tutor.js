@@ -6,6 +6,23 @@ class Tutor extends Tutorando {
     this.salasCriadas = undefined;
     this.avaliacao = undefined;
   }
+
+  getTutor() {
+    return this;
+  }
+
+  setSalasCriadas() {
+
+  }
+
+  updateSalasCriadas(Sala) {
+
+  }
+
+  getSalasCriadas() {
+    
+  }
+
 }
 
 export default Tutor;

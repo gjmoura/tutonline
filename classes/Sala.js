@@ -1,14 +1,24 @@
 
 
-class Tutorando {
-  constructor(nome, email, competencia, descricao, materiais, membros) {
+class Sala {
+  constructor(nome, competencia, descricao, materiais, membros) {
     this.nome = nome;
-    this.email = email;
     this.competencia = competencia;
     this.descricao = descricao;
     this.materiais = materiais;
     this.membros = undefined;
   }
+
+  getSala() {
+    return this;
+  }
+
+  updateSala(nome, competencia, descricao, materiais) {
+    this.nome = nome;
+    this.competencia = competencia;
+    this.descricao = descricao;
+    this.materiais = materiais;
+  }
 }
 
-export default Tutorando;
+export default Sala;
