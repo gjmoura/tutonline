@@ -1,4 +1,4 @@
-import Tutorando from './Tutorando';
+const Tutorando = require('./Tutorando');
 
 class Tutor extends Tutorando {
   constructor(nome, email, competencias, profissao, senha) {
@@ -25,4 +25,4 @@ class Tutor extends Tutorando {
 
 }
 
-export default Tutor;
+module.exports = Tutor;

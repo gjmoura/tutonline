@@ -1,7 +1,5 @@
-
-
 class Sala {
-  constructor(nome, competencia, descricao, materiais, membros) {
+  constructor(nome, competencia, descricao, materiais) {
     this.nome = nome;
     this.competencia = competencia;
     this.descricao = descricao;
@@ -21,4 +19,4 @@ class Sala {
   }
 }
 
-export default Sala;
+module.exports = Sala;
