@@ -2,7 +2,7 @@ const Tutorando = require('./Tutorando');
 
 class Tutor extends Tutorando {
   constructor(nome, email, competencias, profissao, senha) {
-    super(nome, email, competencias, profissao, senha, this.salasMatriculadas);
+    super(nome, email, competencias, profissao, senha);
     this.salasCriadas = undefined;
     this.avaliacao = undefined;
   }
