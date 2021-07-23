@@ -12,12 +12,54 @@
     justify-content: space-evenly;
 }
 
-.btn-primary {
-    background-color: #415A77;
-    border-color: #415A77;
+.card {
+    margin: 2rem 4rem;
+    box-shadow: -4px 4px 4px 0px #00000040;
+    border: 1px solid #2F3E46;
 }
+
+.btn-primary {
+    background-color: #2F3E46;
+    border-color: #2F3E46;
+}
+
 .btn-primary:hover,
 .btn-primary:visited {
     background-color: #415a77da;
     border-color: #415a77da;
+}
+
+form input {
+    box-shadow: -4px 4px 4px 0px #00000040;
+}
+
+.layout-sala {
+    display: grid;
+    grid-template-columns: 300px  auto  300px;
+    grid-template-rows: 1fr  1fr  1fr;
+}
+
+.sidebar {
+    border-right: 1px solid #2F3E46;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.main-content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.item-card {
+    justify-self: stretch;
 }

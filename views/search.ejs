@@ -1,8 +1,8 @@
 <%- include("parts/header") %>
 <body class="w-100 ">
   <div class="container my-5 py-5">
-    <form class=" py-4">
-      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Escolha uma competência...">
+    <form class=" py-4 d-flex justify-content-center">
+      <input class="form-control w-75" list="datalistOptions" id="exampleDataList" placeholder="Escolha uma competência...">
       <datalist id="datalistOptions">
         <% competencias.forEach(competencia => { %>
           <option value=<%= competencia %>>
@@ -11,32 +11,16 @@
     </form>
 
     <section class="cards">
-      <div class="card text-center" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title"><%= tutor.salasCriadas[0].nome  %></h5>
-          <p class="card-text">Tutor: <%= tutor.nome  %></p>          
-          <p class="card-text">Encontros as sextas.</p>
-          <a href="/class" class="btn btn-primary">Entrar</a>
+      <% tutores.forEach(tutor => { %>
+        <div class="card text-center" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"><%= tutor.salasCriadas[0].nome  %></h5>
+            <p class="card-text">Tutor: <%= tutor.nome  %></p>          
+            <p class="card-text">Encontros as sextas.</p>
+            <a href="/class" class="btn btn-primary">Entrar</a>
+          </div>
         </div>
-      </div>
-  
-      <div class="card text-center" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Data Science</h5>
-          <p class="card-text">Tutor: <%= tutor.nome  %></p>          
-          <p class="card-text">Encontros as sextas.</p>
-          <a href="/class" class="btn btn-primary">Entrar</a>
-        </div>
-      </div>
-  
-      <div class="card text-center" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Lógica de Programação</h5>
-          <p class="card-text">Tutor: <%= tutor.nome  %></p>          
-          <p class="card-text">Encontros as sextas.</p>
-          <a href="/class" class="btn btn-primary">Entrar</a>
-        </div>
-      </div>
+      <% }) %>
     </section>
   </div>
 </body>
