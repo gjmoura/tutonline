@@ -40,12 +40,13 @@ form input {
 }
 
 .sidebar {
-    border-right: 1px solid #2F3E46;
+    /* border-right: 1px solid #2F3E46; */
     height: 93vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    /* position: fixed; */
 
     grid-column-start: 1;
     grid-column-end: 2;
@@ -54,12 +55,10 @@ form input {
 }
 
 .main-content {
+    border-right: 1px solid #2F3E46;
+    border-left: 1px solid #2F3E46;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
-}
-
-.item-card {
-    justify-self: stretch;
 }
