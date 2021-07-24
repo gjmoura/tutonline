@@ -62,3 +62,8 @@ form input {
     grid-row-start: 1;
     grid-row-end: 4;
 }
+
+.card-profile {
+    background-color: #415A77;
+    color: #fff;
+}
