@@ -67,3 +67,17 @@ form input {
     background-color: #415A77;
     color: #fff;
 }
+
+.cards-ref {
+    width: 250px;
+}
+
+.link-salas {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.link-salas:hover {
+    color: #FFF;
+    text-decoration: underline;
+}

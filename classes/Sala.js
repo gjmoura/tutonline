@@ -1,10 +1,11 @@
 class Sala {
-  constructor(nome, competencia, descricao, materiais) {
+  constructor(nome, competencia, descricao, material) {
     this.nome = nome;
     this.competencia = competencia;
     this.descricao = descricao;
-    this.materiais = materiais;
-    this.membros = undefined;
+    this.materiais = [];
+    this.materiais.push(material);
+    this._membros = undefined;
   }
 
   getSala() {
@@ -15,7 +16,11 @@ class Sala {
     this.nome = nome;
     this.competencia = competencia;
     this.descricao = descricao;
-    this.materiais = materiais;
+    this.materiais.push(materiais);
+  }
+  
+  updateMateriais(material) {
+    this.materiais.push(material);
   }
 }
 

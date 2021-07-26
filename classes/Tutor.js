@@ -5,7 +5,7 @@ class Tutor extends Tutorando {
   constructor(nome, email, competencias, profissao, senha) {
     super(nome, email, competencias, profissao, senha);
     this.salasCriadas = [];
-    this.avaliacao = undefined;
+    this._avaliacoes = [4];
   }
 
   getTutor() {
@@ -23,6 +23,15 @@ class Tutor extends Tutorando {
 
   getSalasCriadas() {
     return this.salasCriadas;
+  }
+
+  setAvaliacao(avaliacao) {
+    this._avaliacoes.push(avaliacao);
+  }
+
+  getAvaliacao() {
+    console.log(this._avaliacoes)
+    return  this._avaliacoes ? `${this._avaliacoes.reduce((acc, el) => acc + el)/this._avaliacoes.length} de 5` : "Nenhuma avaliação";
   }
 
 }
