@@ -10,11 +10,11 @@ tutores.push(new Tutor("Adson", "adson@gmail.com", "Eletrônica", "Doutor", "pas
 tutores[1].setSalasCriadas('Diodos','Eletrônica', 'Sala de Eletrônica', 'BOYSLTAD');
 tutores.push(new Tutor("Maria Jamilli", "mariajamilli@gmail.com", "Programação", "Doutora", "password"));
 tutores[2].setSalasCriadas('Data Science','Programação', 'Sala para Data Science', 'Data Science');
-tutores.push(new Tutor("Caio Matheus", "mariajamilli@gmail.com", "Matemática", "Doutora", "password"));
+tutores.push(new Tutor("Caio Matheus", "caio@gmail.com", "Matemática", "Doutor", "password"));
 tutores[3].setSalasCriadas('Cálculo','caio', 'Sala para Cálculo', 'Professor Vital');
 tutores.push(new Tutor("Caio Matheus", "caio@gmail.com", "Matemática", "Doutora", "password"));
-tutores[4].setSalasCriadas('Cálculo','Matemática', 'Sala para Cálculo', 'Professor Vital');
+tutores[4].setSalasCriadas('Cálculo II','Matemática', 'Sala para Cálculo', 'Professor Vital');
 tutores.push(new Tutor("Caio Matheus", "caio@gmail.com", "Matemática", "Doutora", "password"));
-tutores[5].setSalasCriadas('Cálculo','Matemática', 'Sala para Cálculo', 'Professor Vital');
+tutores[5].setSalasCriadas('Cálculo III','Matemática', 'Sala para Cálculo', 'Professor Vital');
 
 module.exports = tutores;
